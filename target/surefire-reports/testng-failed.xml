@@ -3,13 +3,14 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="com.crm.qa.testcases.HomepageTest">
+      <class name="com.crm.qa.testcases.ContactspageTest">
         <methods>
           <include name="teardown"/>
+          <include name="verify_pipeline_link"/>
           <include name="setup"/>
-          <include name="clickon_contactslink"/>
+          <include name="verifycontactspage_title"/>
         </methods>
-      </class> <!-- com.crm.qa.testcases.HomepageTest -->
+      </class> <!-- com.crm.qa.testcases.ContactspageTest -->
       <class name="com.crm.qa.testcases.CreatenewcontactTest">
         <methods>
           <include name="createcontact"/>

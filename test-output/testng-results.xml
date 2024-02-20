@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-07T12:59:33 CST" name="Default suite" finished-at="2024-02-07T13:00:11 CST" duration-ms="38146">
+  <suite started-at="2024-02-20T08:08:58 CST" name="FREE CRM Application Test Automation Test Suite" finished-at="2024-02-20T08:10:12 CST" duration-ms="74711">
     <groups>
     </groups>
-    <test started-at="2024-02-07T12:59:33 CST" name="Default test" finished-at="2024-02-07T13:00:11 CST" duration-ms="38146">
+    <test started-at="2024-02-20T08:08:58 CST" name="Free CRM App Test Cases" finished-at="2024-02-20T08:10:12 CST" duration-ms="74711">
       <class name="com.crm.qa.testcases.LoginpageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginpageTest@654f0d9c]" started-at="2024-02-07T12:59:33 CST" name="setup" finished-at="2024-02-07T12:59:43 CST" duration-ms="9615" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginpageTest@50a638b5]" started-at="2024-02-20T08:08:58 CST" name="setup" finished-at="2024-02-20T08:09:03 CST" duration-ms="5803" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="logipage_titletest()[pri:1, instance:com.crm.qa.testcases.LoginpageTest@654f0d9c]" started-at="2024-02-07T12:59:43 CST" name="logipage_titletest" finished-at="2024-02-07T12:59:43 CST" duration-ms="31" status="PASS">
+        <test-method signature="logipage_titletest()[pri:1, instance:com.crm.qa.testcases.LoginpageTest@50a638b5]" started-at="2024-02-20T08:09:03 CST" name="logipage_titletest" finished-at="2024-02-20T08:09:03 CST" duration-ms="25" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logipage_titletest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.crm.qa.testcases.LoginpageTest@654f0d9c]" started-at="2024-02-07T12:59:43 CST" name="teardown" finished-at="2024-02-07T12:59:44 CST" duration-ms="765" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.crm.qa.testcases.LoginpageTest@50a638b5]" started-at="2024-02-20T08:09:03 CST" name="teardown" finished-at="2024-02-20T08:09:04 CST" duration-ms="657" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginpageTest@654f0d9c]" started-at="2024-02-07T12:59:44 CST" name="setup" finished-at="2024-02-07T12:59:49 CST" duration-ms="5289" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.crm.qa.testcases.LoginpageTest@50a638b5]" started-at="2024-02-20T08:09:04 CST" name="setup" finished-at="2024-02-20T08:09:09 CST" duration-ms="4879" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:2, instance:com.crm.qa.testcases.LoginpageTest@654f0d9c]" started-at="2024-02-07T12:59:49 CST" name="loginTest" finished-at="2024-02-07T13:00:11 CST" duration-ms="21580" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="loginTest()[pri:2, instance:com.crm.qa.testcases.LoginpageTest@50a638b5]" started-at="2024-02-20T08:09:09 CST" name="loginTest" finished-at="2024-02-20T08:09:11 CST" duration-ms="1985" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username1']"}
-  (Session info: chrome=121.0.6167.160)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[element click intercepted: Element <input type="submit" value="Login" class="btn btn-small"> is not clickable at point (1141, 122). Other element would receive the click: <div id="preloader" style="opacity: 0.1296;">...</div>
+  (Session info: chrome=121.0.6167.185)
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [076f6b920d5621a9d8a6837a156e0c48, findElement {using=name, value=username1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.160, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\pravith\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50155}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50155/devtoo..., se:cdpVersion: 121.0.6167.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 076f6b920d5621a9d8a6837a156e0c48]]>
+Command: [62e7449192f86cdf39477b44f62596b4, clickElement {id=99DB650FA097A573E1A5439B74D29177_element_24}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.185, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\pravith\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51860}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51860/devtoo..., se:cdpVersion: 121.0.6167.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (62e7449192f86cdf39477b44f62596b4)] -> xpath: //input[@type='submit']]
+Session ID: 62e7449192f86cdf39477b44f62596b4]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username1']"}
-  (Session info: chrome=121.0.6167.160)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="submit" value="Login" class="btn btn-small"> is not clickable at point (1141, 122). Other element would receive the click: <div id="preloader" style="opacity: 0.1296;">...</div>
+  (Session info: chrome=121.0.6167.185)
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [076f6b920d5621a9d8a6837a156e0c48, findElement {using=name, value=username1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.160, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\pravith\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50155}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50155/devtoo..., se:cdpVersion: 121.0.6167.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 076f6b920d5621a9d8a6837a156e0c48
+Command: [62e7449192f86cdf39477b44f62596b4, clickElement {id=99DB650FA097A573E1A5439B74D29177_element_24}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.185, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\pravith\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51860}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51860/devtoo..., se:cdpVersion: 121.0.6167.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (62e7449192f86cdf39477b44f62596b4)] -> xpath: //input[@type='submit']]
+Session ID: 62e7449192f86cdf39477b44f62596b4
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -58,21 +58,22 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:107)
-at com.sun.proxy.$Proxy11.findElement(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy15.sendKeys(Unknown Source)
-at com.crm.qa.pages.LoginPage.login_action(LoginPage.java:28)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:375)
+at com.sun.proxy.$Proxy16.click(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:387)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy15.click(Unknown Source)
+at com.crm.qa.pages.LoginPage.login_action(LoginPage.java:30)
 at com.crm.qa.testcases.LoginpageTest.loginTest(LoginpageTest.java:30)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
@@ -104,15 +105,79 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.crm.qa.testcases.LoginpageTest@654f0d9c]" started-at="2024-02-07T13:00:11 CST" name="teardown" finished-at="2024-02-07T13:00:11 CST" duration-ms="772" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.crm.qa.testcases.LoginpageTest@50a638b5]" started-at="2024-02-20T08:09:11 CST" name="teardown" finished-at="2024-02-20T08:09:12 CST" duration-ms="677" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.crm.qa.testcases.LoginpageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.crm.qa.testcases.HomepageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.crm.qa.testcases.HomepageTest@479d31f3]" started-at="2024-02-20T08:09:12 CST" name="setup" finished-at="2024-02-20T08:09:23 CST" duration-ms="10978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifypage_titletest()[pri:1, instance:com.crm.qa.testcases.HomepageTest@479d31f3]" started-at="2024-02-20T08:09:23 CST" name="verifypage_titletest" finished-at="2024-02-20T08:09:23 CST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifypage_titletest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.crm.qa.testcases.HomepageTest@479d31f3]" started-at="2024-02-20T08:09:23 CST" name="teardown" finished-at="2024-02-20T08:09:23 CST" duration-ms="630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.crm.qa.testcases.HomepageTest@479d31f3]" started-at="2024-02-20T08:09:23 CST" name="setup" finished-at="2024-02-20T08:09:34 CST" duration-ms="10292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verify_usernameTest()[pri:2, instance:com.crm.qa.testcases.HomepageTest@479d31f3]" started-at="2024-02-20T08:09:34 CST" name="verify_usernameTest" finished-at="2024-02-20T08:09:34 CST" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_usernameTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.crm.qa.testcases.HomepageTest@479d31f3]" started-at="2024-02-20T08:09:34 CST" name="teardown" finished-at="2024-02-20T08:09:34 CST" duration-ms="639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.crm.qa.testcases.HomepageTest@479d31f3]" started-at="2024-02-20T08:09:34 CST" name="setup" finished-at="2024-02-20T08:09:45 CST" duration-ms="10435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="clickon_contactslink()[pri:3, instance:com.crm.qa.testcases.HomepageTest@479d31f3]" started-at="2024-02-20T08:09:45 CST" name="clickon_contactslink" finished-at="2024-02-20T08:09:46 CST" duration-ms="1152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickon_contactslink -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.crm.qa.testcases.HomepageTest@479d31f3]" started-at="2024-02-20T08:09:46 CST" name="teardown" finished-at="2024-02-20T08:09:46 CST" duration-ms="637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.crm.qa.testcases.HomepageTest -->
+      <class name="com.crm.qa.testcases.ContactspageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactspageTest@40ef3420]" started-at="2024-02-20T08:09:46 CST" name="setup" finished-at="2024-02-20T08:09:58 CST" duration-ms="11808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifycontactspage_title()[pri:1, instance:com.crm.qa.testcases.ContactspageTest@40ef3420]" started-at="2024-02-20T08:09:58 CST" name="verifycontactspage_title" finished-at="2024-02-20T08:09:58 CST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifycontactspage_title -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.crm.qa.testcases.ContactspageTest@40ef3420]" started-at="2024-02-20T08:09:58 CST" name="teardown" finished-at="2024-02-20T08:09:59 CST" duration-ms="661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.crm.qa.testcases.ContactspageTest@40ef3420]" started-at="2024-02-20T08:09:59 CST" name="setup" finished-at="2024-02-20T08:10:11 CST" duration-ms="11555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verify_pipeline_link()[pri:2, instance:com.crm.qa.testcases.ContactspageTest@40ef3420]" started-at="2024-02-20T08:10:11 CST" name="verify_pipeline_link" finished-at="2024-02-20T08:10:12 CST" duration-ms="1064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_pipeline_link -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.crm.qa.testcases.ContactspageTest@40ef3420]" started-at="2024-02-20T08:10:12 CST" name="teardown" finished-at="2024-02-20T08:10:12 CST" duration-ms="661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.crm.qa.testcases.ContactspageTest -->
+    </test> <!-- Free CRM App Test Cases -->
+  </suite> <!-- FREE CRM Application Test Automation Test Suite -->
 </testng-results>
